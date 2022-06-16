@@ -10,12 +10,11 @@
 <body>
   <div class="page-container">
     <header class="page-header">
-      <div class="header-logo-container">
-        <a class="header-logo" href="#">
-          <img class="page-header-logo" alt="Логотип города Седона" src="images/header-logo.png" width="139"
-            height="70">
-        </a>
-      </div>
+
+      <a class="header-logo" href="#">
+        <img class="page-header-logo" alt="Логотип города Седона" src="images/header-logo.png" width="139" height="70">
+      </a>
+
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -29,17 +28,19 @@
           </li>
         </ul>
         <div class="navigation-user">
-          <a class="navigation-link" href="#">Поиск</a>
-          <a class="navigation-link" href="#">Избранное</a>
-          <a class="navigation-link">Хочу сюда</a>
+          <a class="navigation-link-logo" href="#"></a>
+          <a class="navigation-link-logo" href="#"></a>
+        </div>
+        <div>
+          <a class="navigation-button"><span class="navigation-button-text">Хочу сюда!</span></a>
         </div>
       </nav>
     </header>
     <main class="page-main main-container">
-      <section class="page-hero">
+      <div class="page-hero">
         <img class="hero-welcome-image" src="images/hero-welcome.svg" alt="Добро пожаловать в Седону" width="458"
           height="352">
-      </section>
+      </div>
       <section class="advantages">
         <div class="hero-text">
           <h1 class="hero-title">Седона — небольшой городок в Аризоне,<br>
@@ -51,7 +52,7 @@
           <li class="advantages-item">
             <div class="advantages-item-wrapper">
               <h3 class="advantages-list-title advantages-list-title-white">Настоящий городок</h3>
-              <span class="advantages-number advantages-number-white">— №1 —</span><br>
+              <span class="advantages-number advantages-number-white">— №1 —</span>
               <p class="advantages-description advantages-description-white">Седона — не аттракцион для туристов, там
                 течёт своя жизнь</p>
             </div>
@@ -60,7 +61,7 @@
             <div class="advantages-image-true">
             </div>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item light-blue ">
             <div class="advantages-item-wrapper">
               <h3 class="advantages-list-title">Жильё</h3>
               <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
@@ -74,7 +75,7 @@
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item light-blue">
             <div class="advantages-item-wrapper">
               <h3 class="advantages-list-title">Сувениры</h3>
               <p class="advantages-description">Не только китайского,<br>
@@ -89,34 +90,37 @@
             <div class="advantages-item-wrapper">
               <h3 class="advantages-list-title advantages-list-title-white">Там есть
                 мост дьявола</h3>
-              <span class="advantages-number advantages-number-white">— №2 —</span><br>
+              <span class="advantages-number advantages-number-white">— №2 —</span>
               <p class="advantages-description advantages-description-white">Да, по нему можно пройти! Если вы
                 осмелитесь,
                 разумеется</p>
             </div>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item light-blue">
             <div class="advantages-item-wrapper">
-              <h3 class="advantages-list-title">Небольшая
+              <h3 class="advantages-list-title title-long">Небольшая
                 площадь</h3>
-              <span class="advantages-number">— №3 —</span><br>
-              <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+              <span class="advantages-number">— №3 —</span>
+              <p class="advantages-description advantages-description-long">Все достопримечательности находятся очень
+                близко</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item-wrapper">
-              <h3 class="advantages-list-title">Красивая
+              <h3 class="advantages-list-title title-long">Красивая<br>
                 дорога</h3>
-              <span class="advantages-number">— №4 —</span><br>
-              <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <span class="advantages-number">— №4 —</span>
+              <p class="advantages-description advantages-description-long">Ехать в Седону из Лас-Вегаса совсем не
+                скучно!</p>
             </div>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item light-blue">
             <div class="advantages-item-wrapper">
-              <h3 class="advantages-list-title">Мало
+              <h3 class="advantages-list-title title-long">Мало<br>
                 туристов</h3>
-              <span class="advantages-number">— №5 —</span><br>
-              <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+              <span class="advantages-number">— №5 —</span>
+              <p class="advantages-description advantages-description-long">Большинство едет в Гранд Каньон и толпится
+                там</p>
             </div>
           </li>
         </ul>
@@ -126,7 +130,7 @@
         <p class="search-paragraph">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне
         </p>
-        <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="button search-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="subscription-index">
         <h2 class="subscription-title-white">Подпишитесь на рассылку</h2>
@@ -142,15 +146,15 @@
       <div class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-list">
-          <li>
+          <li class="social-list-item">
             <a class="social-icons-vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в
                 VK</span></a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a class="social-icons-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в
                 Telegram</span></a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a class="social-icons-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
                 class="visually-hidden">Мы в YouTube</span></a>
           </li>
