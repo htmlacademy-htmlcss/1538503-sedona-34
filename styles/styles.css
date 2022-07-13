@@ -187,6 +187,7 @@ img {
 }
 
 .page-hero {
+  background-color: #68A2CA;
   background-image: url(../images/hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -481,8 +482,9 @@ img {
 }
 
 .catalog-filters {
+  background-color:#68A2CA;
   background-image: url(../images/catalog-background.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
   padding: 35px 70px 55px 70px;
@@ -625,13 +627,6 @@ img {
   padding: 94px 200px;
 }
 
-.advantages-image-true {
-  width: 800px;
-  height: 384px;
-  background-image: url(../images/advantages-true-city.jpg);
-
-}
-
 .advantages-image-devil {
   width: 800px;
   height: 384px;
@@ -652,28 +647,38 @@ img {
 }
 
 .advantages-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  align-items: center;
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
 .true-image {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  height: auto;
 }
 
 .devil-image {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  height: auto;
+}
+
+.true-image-pic {
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.devil-image-pic {
+  display: block;
+  object-fit: fill;
+  height: 100%;
 }
 
 .advantages-item {
   text-align: center;
+  width: 400px;
 }
 
 .title-long {
@@ -848,6 +853,7 @@ img {
   background-repeat: no-repeat;
   background-position: 93%;
   cursor: pointer;
+  background-color: #FFFFFF;
 }
 
 .catalog-sorting-select:hover {
@@ -919,13 +925,17 @@ img {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-input:focus+.control-mark {
+.control-input:focus + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   border: 3px solid rgba(131, 179, 211, 1);
 }
 
 .control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:disabled +.control-mark {
+  background-color: #a9a9a9;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark {
@@ -1134,6 +1144,7 @@ img {
   min-width: 160px;
   align-self: center;
   padding: 10px 0 10px 17px;
+  background-color:#FFFFFF;
 }
 
 .catalog-wrapper::after {
@@ -1302,6 +1313,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .catalog-wrapper {
@@ -1356,7 +1368,9 @@ img {
   text-align: center;
   left: 25px;
   top: 15px;
-  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-welcome-image {
@@ -1390,7 +1404,8 @@ img {
   min-width: 175px;
   font-size: 18px;
   line-height: 21px;
-  margin-left: 220px;
+  position: absolute;
+  right: 212px;
 }
 
 .advantages-item-wrapper {
@@ -1758,4 +1773,8 @@ img {
 
 .modal-search-button:active {
   background-color: #68A2CA;
+}
+
+.true-image, .devil-image {
+  width: 800px;
 }
